@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev.Red | Soluções Digitais</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav>
+        <div class="container nav-flex">
+            <div class="logo">DEV<span>.RED</span></div>
+            <div class="links">
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato" class="btn-contato">Orçamento</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Sistemas inteligentes que <br><span>impulsionam seu negócio.</span></h1>
+            <p>Desenvolvedor Fullstack focado em automação, cardápios digitais e sites de alta performance.</p>
+            <div class="cta-group">
+                <a href="https://wa.me/5511922048764?text=Olá!%20Vi%20seu%20portfólio." target="_blank" class="btn-primary">Vamos conversar?</a>
+                <a href="#servicos" class="btn-secondary">Ver soluções</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title">O que eu entrego</h2>
+            <div class="grid-services">
+                
+                <div class="service-card" onclick="openModal('cardapio')">
+                    <div class="icon">🍽️</div>
+                    <h3>Cardápio Digital</h3>
+                    <p>Gestão via Google Sheets e pedidos diretos no WhatsApp.</p>
+                    <span class="saiba-mais">Ver detalhes →</span>
+                </div>
+
+                <div class="service-card" onclick="openModal('landing')">
+                    <div class="icon">🚀</div>
+                    <h3>Landing Pages</h3>
+                    <p>Sites focados em conversão e autoridade digital.</p>
+                    <span class="saiba-mais">Ver detalhes →</span>
+                </div>
+
+                <div class="service-card" onclick="openModal('automacao')">
+                    <div class="icon">⚙️</div>
+                    <h3>Automações</h3>
+                    <p>Integração de APIs para eliminar tarefas manuais.</p>
+                    <span class="saiba-mais">Ver detalhes →</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Inovação com foco em resultado</h2>
+            <p>Sou desenvolvedor e criador digital. Unindo código técnico com visão de negócio para entregar ferramentas que realmente vendem.</p>
+            <div class="stats">
+                <div class="stat-item"><strong>3+</strong><span>Meses Exp.</span></div>
+                <div class="stat-item"><strong>100%</strong><span>Foco</span></div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <div class="container">
+            <h2>Pronto para escalar sua empresa?</h2>
+            <p style="color: var(--text-sec); font-size: 0.9rem; margin-top: 20px; margin-bottom: -10px;">Clique abaixo e me chame no WhatsApp</p>
+            <a href="https://wa.me/5511922048764?text=Olá!%20Gostaria%20de%20um%20orçamento." target="_blank" class="footer-link">Me contate para mais informações!</a>
+            <div class="social">
+                <a href="https://github.com/CodeBy-red" target="_blank">GitHub</a>
+                <a href="mailto:Gl451606@gmail.com">E-mail</a>
+            </div>
+            <p class="copy">&copy; 2026 - Desenvolvido por Dev.Red.</p>
+        </div>
+    </footer>
+
+    <div id="modal-servico" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
